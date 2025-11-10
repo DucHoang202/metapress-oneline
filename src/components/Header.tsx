@@ -1,72 +1,110 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import  DemoButton  from "./ui/DemoButton";
-const Header: React.FC = () => {
+import DemoButton from "./ui/DemoButton";
+
+interface HeaderData {
+  section: string;
+  links: string[];
+  button: {
+    text: string;
+    dropdown: string;
+  };
+}
+
+interface HeaderProps {
+  DropdownComponent: React.FC;
+}
+
+const Header: React.FC<HeaderProps> = ({ DropdownComponent }) => {
   const navigate = useNavigate();
+  const [headerData, setHeaderData] = useState<HeaderData | null>(null);
 
-  //Smooth scroll
-  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+  useEffect(() => {
+    const languageData = (window as any).language;
+    if (languageData?.data) {
+      const header = languageData.data.find(
+        (item: any) => item.section === "header"
+      );
+      if (header) {
+        setHeaderData(header);
+      }
+    }
+  }, []);
+
+  const handleSmoothScroll = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    targetId: string
+  ) => {
     e.preventDefault();
-
     const targetElement = document.querySelector(targetId);
     if (targetElement) {
-      //Nếu đang ở trang hiện tại, scroll luôn
       targetElement.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
+        behavior: "smooth",
+        block: "start",
       });
-
-      //Cập nhật URL mà không reload trang
-      window.history.pushState(null, '', targetId);
+      window.history.pushState(null, "", targetId);
     } else {
-    //Nếu đang ở trang khác
-    navigate('/' + targetId);
-// Đợi 100ms rồi scroll
+      navigate("/" + targetId);
       setTimeout(() => {
         const element = document.querySelector(targetId);
         if (element) {
           element.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start',
+            behavior: "smooth",
+            block: "start",
           });
         }
       }, 100);
     }
-  }
+  };
 
+  const getLinkConfig = (linkText: string) => {
+    const linkMap: { [key: string]: { href: string; target: string } } = {
+      Solutions: { href: "#solution", target: "#solution" },
+      "Giải pháp": { href: "#solution", target: "#solution" },
+      Benefits: { href: "#benefit", target: "#benefit" },
+      "Lợi ích": { href: "#benefit", target: "#benefit" },
+      Customers: { href: "#customer", target: "#customer" },
+      "Khách hàng": { href: "#customer", target: "#customer" },
+      Contact: { href: "/form", target: "" },
+      "Liên hệ": { href: "/form", target: "" },
+    };
+    return linkMap[linkText] || { href: "#", target: "" };
+  };
 
- return (<section className="header-section">
- <div className="header-section__container ">
-     <div className="header-section__icon-container ">
-    
-            <img src="/assets/clean-logo.webp" onClick = {() => navigate("/")} alt="logo"></img>
+  if (!headerData) return null;
 
-     </div>
-      <div className="header-section__link-container ">
-                <a className="link" href="#solution"  onClick={(e) => handleSmoothScroll(e, '#solution')}>Giải pháp</a>
-                <a className="link" href="#benefit"
-                onClick = {(e) => handleSmoothScroll(e, '#benefit')}>Lợi ích</a>
-                <a className="link" href="#customer"  onClick = {(e) => handleSmoothScroll(e, '#customer')}>Khách hàng</a>
-                <a className="link" href="/form">Liên hệ</a>
-
+  return (
+    <section className="header-section">
+      <div className="header-section__container">
+        <div className="header-section__icon-container">
+          <img
+            src="/assets/clean-logo.webp"
+            onClick={() => navigate("/")}
+            alt="logo"
+          />
         </div>
-         {/* <button className="header-section__demo-btn ">
-            <div className="text" onClick={() => window.location.href = "/form"}>
-                Liên hệ demo
-                  </div>
-                <span className="icon-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-  <path d="M3 13L13 3M13 3H5.5M13 3V10.5" stroke="#FCF5FE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-                </span>
-          
 
-            </button> */}
-        <DemoButton href="/form"/>
+        <div className="header-section__link-container">
+          {headerData.links.map((linkText, index) => {
+            const { href, target } = getLinkConfig(linkText);
+            return (
+              <a
+                key={index}
+                className="link"
+                href={href}
+                onClick={target ? (e) => handleSmoothScroll(e, target) : undefined}
+              >
+                {linkText}
+              </a>
+            );
+          })}
+        </div>
 
-
- </div>
- </section>)   
-}
+        <DropdownComponent />
+        <DemoButton href="/form" text={headerData.button.text} />
+      </div>
+    </section>
+  );
+};
 
 export default Header;

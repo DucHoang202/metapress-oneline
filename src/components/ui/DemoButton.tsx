@@ -1,8 +1,9 @@
 interface DemoButtonProps {
   href: string;
+  text: string;
 }
 
-const DemoButton: React.FC<DemoButtonProps> = ({ href }) => {
+const DemoButton: React.FC<DemoButtonProps> = ({ href, text }) => {
   // const black = (
   //   <svg
   //     xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +42,7 @@ const DemoButton: React.FC<DemoButtonProps> = ({ href }) => {
 
   return (
     <a className="demo-btn" href={href}>
-      <div className="text">Liên hệ demo</div>
+      <div className="text">{text}</div>
       <span className="icon-container">{white}</span>
     </a>
   );

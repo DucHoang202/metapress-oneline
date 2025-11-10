@@ -1,0 +1,219 @@
+{
+  "language": "en",
+  "data": [
+    {
+      "section": "header",
+      "links": [
+        "Solutions",
+        "Benefits",
+        "Customers",
+        "Contact"
+      ],
+      "button": {
+        "text": "Request Demo"
+      }
+    },
+    {
+      "section": "hero",
+      "status": "New",
+      "name": "The Newsroom OS",
+      "title": "The AI Operating System for the Newsroom of the Future",
+      "subtitle": "MetaPress is an AI Multi-Agent platform designed specifically for newsrooms, optimizing workflows and helping journalists and editors create content faster, more accurately, and more efficiently.",
+      "button": "Request Demo"
+    },
+    {
+      "section": "customer",
+      "title": "Trust Built <br> on Real Operational Efficiency",
+      "subtitle": "Every testimonial is proof of the operational efficiency that MetaPress delivers.",
+      "testimonials": [
+        [
+          {
+            "heading": "",
+            "quote": "MetaPress amazed us with how well it understands the sports journalism profession. From data aggregation, editing, to publishing — everything has become streamlined. Most importantly, MetaPress gives us more time to focus on content — exploring new perspectives, telling deeper stories, and nurturing the true spirit of sports journalism.",
+            "name": "Dương Quỳnh",
+            "position": "Content Team Lead, Webthethao"
+          },
+          {
+            "heading": "Seamless Integration, Instant Results",
+            "quote": "Integrating NexaAI into our legacy systems was effortless. Within days we automated critical workflows, reduced errors, and freed our team to focus on strategic initiatives. Simply outstanding.",
+            "name": "Priya Kumar",
+            "position": "VP of Operations, Meridian Financial"
+          }
+        ],
+        [
+          {
+            "heading": "",
+            "quote": "As someone creating financial analysis content — a highly specialized field — I used to think AI couldn’t help at all. But I was wrong. MetaPress acts like a talented assistant, helping me organize scattered ideas into clear, engaging stories. From the very first video on my new channel, with MetaPress’s support, it reached massive views and watch hours, turning my channel into a YouTube Partner right after the first release.",
+            "name": "Ms. Minh Thư",
+            "position": "Host, Thư's Show – Financial & Business News Channel"
+          },
+          {
+            "heading": "Scalable AI That Grows with Us",
+            "quote": "As a fast-growing startup, we needed an AI partner that could scale. NexaAI's modular platform expanded alongside our business—delivering enterprise-grade features.",
+            "name": "Carlos Ramirez",
+            "position": "CEO, NovaSolutions"
+          }
+        ]
+      ]
+    },
+    {
+      "section": "feature",
+      "title": "The Newsroom OS",
+      "subtitle": "Powered by a specialized AI Multi-Agent architecture that dynamically coordinates to handle every newsroom production workflow.",
+      "featureList": [
+        {
+          "title": "Topic Discovery",
+          "subtitle": "Cross-platform news scanning"
+        },
+        {
+          "title": "Trend & Risk Alerts",
+          "subtitle": "Real-time trend monitoring"
+        },
+        {
+          "title": "Automatic Draft Generation",
+          "subtitle": "AI-suggested outlines and headlines"
+        },
+        {
+          "title": "SEO & Multi-platform Optimization",
+          "subtitle": "Analysis and synchronized publishing"
+        }
+      ]
+    },
+    {
+      "section": "benefit",
+      "title": "Clear Benefits, Instant Impact",
+      "content": {
+        "visionLabel": "OUR VISION",
+        "visionDescription": "As an intelligent assistant, MetaPress understands journalism work, captures reporters’ ideas, streamlines workflows, and optimizes the production of high-quality content — faster and more accurately."
+      }
+    },
+    {
+      "section": "diagram3",
+      "content": [
+        {
+          "title": "Preserve Brand Identity & Editorial DNA",
+          "subtitle": "Define clear content direction and topic scope, ensuring compliance with journalism standards and legal regulations while maintaining your newsroom’s DNA."
+        },
+        {
+          "title": "Diverse & Fast Content Production",
+          "subtitle": "One story — multiple formats: articles, infographics, videos, or extended datasets, distributed across channels."
+        },
+        {
+          "title": "Cost Savings & Resource Optimization",
+          "subtitle": "Automate the entire production chain with specialized AI Agents at every step, ensuring speed, accuracy, and consistency."
+        },
+        {
+          "title": "Rapid Deployment, Immediate Results",
+          "subtitle": "We confidently deliver and deploy solutions within just 2–4 weeks from requirements gathering to project completion."
+        }
+      ]
+    },
+    {
+      "section": "get-started",
+      "title": "When Technology Solves Journalists’ Real Problems",
+      "subtitle": "Designed from deep insights into newsroom operations, MetaPress AI captures editorial thinking, streamlines processes, optimizes workflows, and elevates content quality.",
+      "button": "Request Demo",
+      "stats": [
+        {
+          "title": "250+",
+          "subtitle": "Journalists and reporters use it daily"
+        },
+        {
+          "title": "50+",
+          "subtitle": "Partner newsrooms and media organizations"
+        },
+        {
+          "title": "10,000+",
+          "subtitle": "AI-optimized articles every month"
+        }
+      ]
+    },
+    {
+      "section": "customer",
+      "title": "Trust Built on Real Operational Efficiency",
+      "subtitle": "Every testimonial is proof of the operational efficiency that MetaPress delivers.",
+      "testimonials": [
+        {
+          "quote": "MetaPress amazed us with how well it understands the sports journalism profession. From data aggregation, editing, to publishing — everything has become streamlined. Most importantly, MetaPress gives us more time to focus on content — exploring new perspectives, telling deeper stories, and nurturing the true spirit of sports journalism.",
+          "name": "Dương Quỳnh",
+          "position": "Content Team Lead, Webthethao"
+        },
+        {
+          "heading": "Seamless Integration, Instant Results",
+          "quote": "Integrating NexaAI into our legacy systems was effortless. Within days we automated critical workflows, reduced errors, and freed our team to focus on strategic initiatives. Simply outstanding.",
+          "name": "Priya Kumar",
+          "position": "VP of Operations, Meridian Financial"
+        },
+        {
+          "quote": "As someone creating financial analysis content — a highly specialized field — I used to think AI couldn’t help at all. But I was wrong. MetaPress acts like a talented assistant, helping me organize scattered ideas into clear, engaging stories. From the very first video on my new channel, with MetaPress’s support, it reached massive views and watch hours, turning my channel into a YouTube Partner right after the first release.",
+          "name": "Ms. Minh Thư",
+          "position": "Host, Thư's Show – Financial & Business News Channel"
+        },
+        {
+          "heading": "Scalable AI That Grows with Us",
+          "quote": "As a fast-growing startup, we needed an AI partner that could scale. NexaAI's modular platform expanded alongside our business—delivering enterprise-grade features.",
+          "name": "Carlos Ramirez",
+          "position": "CEO, NovaSolutions"
+        }
+      ]
+    },
+    {
+      "section": "question",
+      "faq": [
+        {
+          "title": "Why choose MetaPress?",
+          "subtitle": "MetaPress is a comprehensive AI solution built specifically for newsrooms, automating the entire content production process — from topic discovery to publishing and distribution. This enables faster workflows, lower operational costs, and preservation of each newsroom’s unique journalistic identity."
+        },
+        {
+          "title": "What makes MetaPress different?",
+          "subtitle": "Unlike traditional CMS systems that only manage content, MetaPress integrates deep AI into every stage of journalism — trend detection, fact-checking, automated writing, content diversification, and intelligent multi-channel distribution. It preserves each newsroom’s unique DNA while significantly reducing legal and factual risks."
+        },
+        {
+          "title": "What’s special about MetaPress?",
+          "subtitle": "A fully automated journalism workflow where every step is handled by a specialized AI Agent — ensuring speed, precision, and consistency.\nClear tone and topic boundaries preserve the newsroom’s unique identity.\nSupports diverse content formats: articles, infographics, videos, and data-driven stories."
+        },
+        {
+          "title": "How is MetaPress priced?",
+          "subtitle": "MetaPress pricing depends on newsroom size, number of users, and selected features. We provide flexible packages and detailed consultations to optimize both cost and performance for each client. Contact us to get a tailored quote for your newsroom."
+        },
+        {
+          "title": "How can I start working with MetaPress?",
+          "subtitle": "The first step is to contact our consulting team to discuss your newsroom’s specific needs. We’ll then co-develop an AI integration roadmap, conduct pilot implementation, and train your staff. MetaPress will continuously support you to ensure optimal performance."
+        }
+      ]
+    },
+    {
+      "section": "unlock",
+      "category": "",
+      "title": "Start Transforming Your Newsroom with MetaPress Today",
+      "subtitle": "Empower your newsroom with AI — operate more flexibly, save more, and produce faster every day.",
+      "button": "Contact Now"
+    },
+    {
+      "section": "footer",
+      "subtitle": "The AI Operating System for the Newsroom of the Future",
+      "links": [
+        { "text": "Solutions" },
+        { "text": "Pricing" },
+        { "text": "Resources" },
+        { "text": "About" },
+        { "text": "Contact" }
+      ],
+      "socials": [
+        { "text": "Instagram" },
+        { "text": "YouTube" },
+        { "text": "Twitter" },
+        { "text": "LinkedIn" }
+      ],
+      "contact": {
+        "email": "contact@metapress.ai",
+        "phone": "+91 9876543210"
+      },
+      "bottom": {
+        "company": "©2025 All Rights Reserved by MetaPress",
+        "terms": "Terms of Service",
+        "privacy": "Privacy Policy"
+      }
+    }
+  ]
+}

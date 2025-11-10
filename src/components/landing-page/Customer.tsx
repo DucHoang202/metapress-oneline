@@ -1,98 +1,113 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import Masonry from "react-masonry-css";
+
+interface Testimonial {
+  heading?: string;
+  quote: string;
+  name: string;
+  position: string;
+}
+
+interface CustomerData {
+  section: string;
+  title: string;
+  subtitle: string;
+  testimonials: Testimonial[][] | Testimonial[];
+}
 
 const Customer: React.FC = () => {
-    return (
-        <section className="testimonials" id="customer">
-            <div className="testimonials__container">
-                <div className="testimonials__header">
-                    <h2 className="testimonials__title">
-                        Niềm tin được xây dựng <br></br> từ hiệu quả vận hành thực tế
-                    </h2>
-                    <p className="testimonials__subtitle">
-                        Mỗi lời chia sẻ là một minh chứng cho hiệu quả vận hành mà MetaPress mang lại.
-                    </p>
-                </div>
-                <div className="testimonials__grid">
-                    <div className="testimonials__column">
-                        <article className="testimonials__card">
-                            <div className="testimonials__content">
-                                <p className="testimonials__quote">
-               MetaPress khiến chúng tôi ngạc nhiên vì cách nền tảng này hiểu nghề báo thể thao đến vậy. Từ khâu tổng hợp dữ liệu, biên tập, đến xuất bản, mọi thứ đều được tinh gọn. Quan trọng nhất, MetaPress giúp chúng tôi có thêm thời gian đầu tư cho nội dung – tìm những góc nhìn mới, những câu chuyện có chiều sâu và nuôi dưỡng tinh thần thể thao đúng nghĩa.
+  const [customerData, setCustomerData] = useState<CustomerData | null>(null);
 
-                                </p>
-                            </div>
-                            <div className="testimonials__author">
-                                <div className="testimonials__avatar">
-                                    <img src="../../assets/Mr.webp" alt="Carlos Ramirez" />
-                                </div>
-                                <div className="testimonials__author-info">
-                                    <div className="testimonials__name">Dương Quỳnh
-</div>
-                                    <div className="testimonials__position">Trưởng nhóm nội dung Webthethao
-</div>
-                                </div>
-                            </div>
-                        </article>
-                        <article className="testimonials__card">
-                            <div className="testimonials__content">
-                                <h3 className="testimonials__heading">Seamless Integration, Instant Results</h3>
-                                <p className="testimonials__quote--small">
-                                    Integrating NexaAI into our legacy systems was effortless. Within days we automated critical workflows, reduced errors, and freed our team to focus on strategic initiatives. Simply outstanding.
-                                </p>
-                            </div>
-                            <div className="testimonials__author">
-                                <div className="testimonials__avatar">
-                                    <img src="../../assets/image 7.webp" alt="Carlos Ramirez" />
-                                </div>
-                                <div className="testimonials__author-info">
-                                    <div className="testimonials__name">Priya Kumar</div>
-                                    <div className="testimonials__position">VP of Operations, Meridian Financial</div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div className="testimonials__column">
-                        <article className="testimonials__card">
-                            <div className="testimonials__content">
-                                <p className="testimonials__quote">
-                                    Là người làm nội dung phân tích tài chính, một lĩnh vực hết sức đặc thù, tôi từng nghĩ AI sẽ chẳng giúp gì được đâu. Nhưng tôi đã nhầm. Metapress như một trợ lý giỏi của tôi, giúp tôi sắp xếp những suy nghĩ, ý tưởng đang lộn xộn thành một câu chuyện ngay ngắn, hấp dẫn. Ngay từ video đầu tiên khi kênh vừa ra mắt, nhờ sự hỗ trợ của Metapress, kênh của tôi đã đạt lượng view khủng với thời gian xem hàng nghìn giờ, giúp kênh trở thành đối tác của YouTube ngay sau video đầu tiên
-                                </p>
-                            </div>
-                            <div className="testimonials__author">
-                                <div className="testimonials__avatar">
-                                    <img src="../../assets/Ms. Minh Thu.webp" style={{transform: 'scale(1.8) translateX(10px)', }} alt="Ms. Minh Thu" />
-                                </div>
-                                <div className="testimonials__author-info">
-                                    <div className="testimonials__name">Ms. Minh Thư</div>
-                                    <div className="testimonials__position">Host, Thư's Show - kênh tin tức tài chính & kinh doanh</div>
-                                </div>
-                            </div>
-                        </article>
-                        <article className="testimonials__card">
-                            <div className="testimonials__content">
-                                <h3 className="testimonials__heading">Scalable AI That Grows with Us</h3>
-                                <p className="testimonials__quote--small">
-                                    As a fast-growing startup, we needed an AI partner that could scale. NexaAI's modular platform expanded alongside our business—delivering enterprise-grade features.
-                                </p>
-                            </div>
-                            <div className="testimonials__author">
-                                <div className="testimonials__avatar">
-                                    <img src="../../assets/image.webp" alt="Carlos Ramirez" />
-                                </div>
-                                <div className="testimonials__author-info">
-                                    <div className="testimonials__name">Carlos Ramirez</div>
-                                    <div className="testimonials__position">CEO, NovaSolutions</div>
-                                </div>
-                            </div>
-                            
-                        </article>
-                        
-                    </div>
+  useEffect(() => {
+    // Lấy dữ liệu từ (window as any).language
+    const languageData = (window as any).language;
+    if (languageData?.data) {
+      // Tìm section có section === "customer"
+      const customer = languageData.data.find((item: any) => item.section === "customer");
+      if (customer) {
+        setCustomerData(customer);
+      }
+    }
+  }, []);
+
+  // Map avatar cho mỗi testimonial dựa trên tên
+  const getAvatar = (name: string) => {
+    const avatarMap: { [key: string]: { src: string; style?: React.CSSProperties } } = {
+      'Dương Quỳnh': { src: '../../assets/Mr.webp' },
+      'Priya Kumar': { src: '../../assets/image 7.webp' },
+      'Ms. Minh Thư': { 
+        src: '../../assets/Ms. Minh Thu.webp',
+        style: { transform: 'scale(1.8) translateX(10px)' }
+      },
+      'Carlos Ramirez': { src: '../../assets/image.webp' },
+    };
+    return avatarMap[name] || { src: '../../assets/default.webp' };
+  };
+
+  if (!customerData) {
+    return null;
+  }
+
+  // Flatten testimonials thành mảng 1 chiều để Masonry xử lý
+  const allTestimonials = Array.isArray(customerData.testimonials[0]) 
+    ? (customerData.testimonials as Testimonial[][]).flat()
+    : (customerData.testimonials as Testimonial[]);
+
+  // Breakpoint configuration cho Masonry
+  const breakpointColumns = {
+    default: 2,  // 2 cột mặc định
+    1100: 2,     // 2 cột cho màn hình >= 1100px
+    700: 1,      // 1 cột cho màn hình < 700px
+  };
+
+  return (
+    <section className="testimonials" id="customer">
+      <div className="testimonials__container">
+        <div className="testimonials__header">
+          <h2 
+            className="testimonials__title"
+            dangerouslySetInnerHTML={{ __html: customerData.title }}
+          />
+          <p className="testimonials__subtitle">
+            {customerData.subtitle}
+          </p>
+        </div>
+        
+        <Masonry
+          breakpointCols={breakpointColumns}
+          className="testimonials__grid"
+          columnClassName="testimonials__column"
+        >
+          {allTestimonials.map((testimonial, index) => (
+            <article key={index} className="testimonials__card">
+              <div className="testimonials__content">
+                {testimonial.heading && (
+                  <h3 className="testimonials__heading">{testimonial.heading}</h3>
+                )}
+                <p className={testimonial.heading ? "testimonials__quote--small" : "testimonials__quote"}>
+                  {testimonial.quote}
+                </p>
+              </div>
+              <div className="testimonials__author">
+                <div className="testimonials__avatar">
+                  <img 
+                    src={getAvatar(testimonial.name).src} 
+                    alt={testimonial.name}
+                    style={getAvatar(testimonial.name).style}
+                  />
                 </div>
-         
-       </div> 
-       </section>
-    )
-}
+                <div className="testimonials__author-info">
+                  <div className="testimonials__name">{testimonial.name}</div>
+                  <div className="testimonials__position">{testimonial.position}</div>
+                </div>
+              </div>
+            </article>
+          ))}
+        </Masonry>
+      </div>
+
+    </section>
+  );
+};
 
 export default Customer;

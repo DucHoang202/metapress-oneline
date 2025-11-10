@@ -1,0 +1,236 @@
+{
+  "language": "vi",
+  "data": [
+    
+  {
+    "section": "header",
+    "links": [
+      "Giải pháp", 
+    "Lợi ích", 
+     "Khách hàng",
+       "Liên hệ"
+    ],
+    "button": {
+      "text": "Liên hệ demo"
+    }
+  },
+
+
+    {
+      "section": "hero",
+      "status": "New",
+      "name": "The Newsroom OS",
+      "title": "Hệ điều hành AI cho tòa soạn tương lai",
+      "subtitle": "MetaPress là nền tảng AI Multi-Agent dành riêng cho các tòa soạn, giúp tối ưu quy trình, hỗ trợ phóng viên và biên tập viên tạo nội dung nhanh, chính xác và hiệu quả hơn.",
+      "button": "Liên hệ demo"
+    },
+    {
+  "section": "customer",
+  "title": "Niềm tin được xây dựng <br> từ hiệu quả vận hành thực tế",
+  "subtitle": "Mỗi lời chia sẻ là một minh chứng cho hiệu quả vận hành mà MetaPress mang lại.",
+  "testimonials": [
+    [
+      {
+        "heading": "",
+        "quote": "MetaPress khiến chúng tôi ngạc nhiên vì cách nền tảng này hiểu nghề báo thể thao đến vậy. Từ khâu tổng hợp dữ liệu, biên tập, đến xuất bản, mọi thứ đều được tinh gọn. Quan trọng nhất, MetaPress giúp chúng tôi có thêm thời gian đầu tư cho nội dung – tìm những góc nhìn mới, những câu chuyện có chiều sâu và nuôi dưỡng tinh thần thể thao đúng nghĩa.",
+        "name": "Dương Quỳnh",
+        "position": "Trưởng nhóm nội dung Webthethao"
+      },
+      {
+        "heading": "Seamless Integration, Instant Results",
+        "quote": "Integrating NexaAI into our legacy systems was effortless. Within days we automated critical workflows, reduced errors, and freed our team to focus on strategic initiatives. Simply outstanding.",
+        "name": "Priya Kumar",
+        "position": "VP of Operations, Meridian Financial"
+      }
+    ],
+    [
+      {
+        "heading": "",
+        "quote": "Là người làm nội dung phân tích tài chính, một lĩnh vực hết sức đặc thù, tôi từng nghĩ AI sẽ chẳng giúp gì được đâu. Nhưng tôi đã nhầm. Metapress như một trợ lý giỏi của tôi, giúp tôi sắp xếp những suy nghĩ, ý tưởng đang lộn xộn thành một câu chuyện ngay ngắn, hấp dẫn. Ngay từ video đầu tiên khi kênh vừa ra mắt, nhờ sự hỗ trợ của Metapress, kênh của tôi đã đạt lượng view khủng với thời gian xem hàng nghìn giờ, giúp kênh trở thành đối tác của YouTube ngay sau video đầu tiên.",
+        "name": "Ms. Minh Thư",
+        "position": "Host, Thư's Show - kênh tin tức tài chính & kinh doanh"
+      },
+      {
+        "heading": "Scalable AI That Grows with Us",
+        "quote": "As a fast-growing startup, we needed an AI partner that could scale. NexaAI's modular platform expanded alongside our business—delivering enterprise-grade features.",
+        "name": "Carlos Ramirez",
+        "position": "CEO, NovaSolutions"
+      }
+    ]
+  ]
+},
+
+    {
+      "section": "feature",
+      "title": "The Newsroom OS",
+      "subtitle": "Vận hành trên kiến trúc AI Multi-agent chuyên biệt, linh hoạt điều phối để xử lý mọi quy trình nghiệp vụ trong sản xuất báo chí.",
+      "featureList": [
+        {
+          "title": "Phát hiện đề tài",
+          "subtitle": "Quét tin đa nền tảng"
+        },
+        {
+          "title": "Cảnh báo xu hướng & rủi ro",
+          "subtitle": "Cảnh báo trend"
+        },
+        {
+          "title": "Tạo bản nháp tự động",
+          "subtitle": "AI gợi ý dàn ý và tiêu đề"
+        },
+        {
+          "title": "Tối ưu SEO & đa nền tảng",
+          "subtitle": "Phân tích và xuất bản đồng bộ"
+        }
+      ]
+    },
+    {
+  "section": "benefit",
+  "title": "Lợi ích rõ ràng, tác động tức thì",
+  "content": {
+    "visionLabel": "CHÚNG TÔI HƯỚNG TỚI",
+    "visionDescription": "Như một trợ lý thông minh đồng hành, MetaPress thấu hiểu công việc báo chí, nắm bắt ý tưởng phóng viên, tinh gọn quy trình và tối ưu sản xuất nội dung chất lượng, nhanh, chính xác."
+  }
+},
+{
+  "section": "diagram3",
+  "content": [
+    {
+      "title": "Giữ vững thương hiệu, DNA tòa soạn",
+      "subtitle": "Định hướng nội dung và phạm vi chủ đề rõ ràng, đảm bảo tuân thủ luật pháp và chuẩn mực báo chí nhưng vẫn giữ DNA tòa soạn."
+    },
+    {
+      "title": "Sản xuất nội dung đa dạng, nhanh chóng",
+      "subtitle": "Một nội dung – nhiều định dạng từ bài báo đến infographic, video hay dữ liệu mở rộng, lan tỏa đa kênh."
+    },
+    {
+      "title": "Tiết kiệm chi phí, tối ưu nguồn lực",
+      "subtitle": "Tự động hóa toàn bộ chuỗi sản xuất, mỗi bước đều có AI Agent chuyên trách, đảm bảo quy trình nhanh, chính xác và nhất quán."
+    },
+    {
+      "title": "Triển khai nhanh chóng, hiệu quả tức thì",
+      "subtitle": "Chúng tôi tự tin triển khai giải pháp tới khách hàng chỉ từ 2 - 4 tuần từ khi lấy yêu cầu đến nghiệm thu dự án."
+    }
+  ]
+},
+{
+  "section": "get-started",
+  "title": "Khi công nghệ giải quyết được vấn đề của người làm báo",
+  "subtitle": "Được thiết kế từ hiểu biết sâu sắc về nghiệp vụ báo chí, AI của MetaPress nắm bắt tư duy tòa soạn, giúp bạn tinh gọn quy trình, tối ưu vận hành và nâng tầm chất lượng nội dung.",
+  "button": "Liên hệ Demo",
+  "stats": [
+    {
+      "title": "250+",
+      "subtitle": "Phóng viên, nhà báo sử dụng hàng ngày"
+    },
+    {
+      "title": "50+",
+      "subtitle": "Tòa soạn và cơ quan báo chí hợp tác"
+    },
+    {
+      "title": "10.000+",
+      "subtitle": "Bài viết được tối ưu bằng AI mỗi tháng"
+    }
+  ]
+},
+{
+  "section": "customer",
+  "title": "Niềm tin được xây dựng từ hiệu quả vận hành thực tế",
+  "subtitle": "Mỗi lời chia sẻ là một minh chứng cho hiệu quả vận hành mà MetaPress mang lại.",
+  "testimonials": [
+    {
+      "quote": "MetaPress khiến chúng tôi ngạc nhiên vì cách nền tảng này hiểu nghề báo thể thao đến vậy. Từ khâu tổng hợp dữ liệu, biên tập, đến xuất bản, mọi thứ đều được tinh gọn. Quan trọng nhất, MetaPress giúp chúng tôi có thêm thời gian đầu tư cho nội dung – tìm những góc nhìn mới, những câu chuyện có chiều sâu và nuôi dưỡng tinh thần thể thao đúng nghĩa.",
+      "name": "Dương Quỳnh",
+      "position": "Trưởng nhóm nội dung Webthethao"
+    },
+    {
+      "heading": "Seamless Integration, Instant Results",
+      "quote": "Integrating NexaAI into our legacy systems was effortless. Within days we automated critical workflows, reduced errors, and freed our team to focus on strategic initiatives. Simply outstanding.",
+      "name": "Priya Kumar",
+      "position": "VP of Operations, Meridian Financial"
+    },
+    {
+      "quote": "Là người làm nội dung phân tích tài chính, một lĩnh vực hết sức đặc thù, tôi từng nghĩ AI sẽ chẳng giúp gì được đâu. Nhưng tôi đã nhầm. Metapress như một trợ lý giỏi của tôi, giúp tôi sắp xếp những suy nghĩ, ý tưởng đang lộn xộn thành một câu chuyện ngay ngắn, hấp dẫn. Ngay từ video đầu tiên khi kênh vừa ra mắt, nhờ sự hỗ trợ của Metapress, kênh của tôi đã đạt lượng view khủng với thời gian xem hàng nghìn giờ, giúp kênh trở thành đối tác của YouTube ngay sau video đầu tiên.",
+      "name": "Ms. Minh Thư",
+      "position": "Host, Thư's Show - kênh tin tức tài chính & kinh doanh"
+    },
+    {
+      "heading": "Scalable AI That Grows with Us",
+      "quote": "As a fast-growing startup, we needed an AI partner that could scale. NexaAI's modular platform expanded alongside our business—delivering enterprise-grade features.",
+      "name": "Carlos Ramirez",
+      "position": "CEO, NovaSolutions"
+    }
+  ]
+},
+{
+    "section": "question",
+    "title": "Các câu hỏi thường gặp",
+    "faq":
+    [
+  {
+    "title": "Tại sao chọn MetaPress?",
+    "subtitle": "MetaPress là giải pháp AI toàn diện dành riêng cho các tòa soạn báo, giúp tự động hóa toàn bộ quy trình sản xuất tin bài từ phát hiện đề tài đến xuất bản và phân phối. Điều này giúp tòa soạn tăng tốc độ xử lý, giảm chi phí vận hành và giữ vững bản sắc báo chí riêng biệt."
+  },
+  {
+    "title": "Sự khác biệt của MetaPress là gì?",
+    "subtitle": "Khác với các hệ thống CMS truyền thống chỉ quản lý nội dung, MetaPress tích hợp AI chuyên sâu cho từng công đoạn báo chí: nhận diện xu hướng, kiểm chứng thông tin, tự động tạo bài viết, đa dạng hóa hình thức nội dung và phân phối thông minh đa kênh. Hệ thống giữ nguyên DNA đặc trưng của tòa soạn đồng thời giảm thiểu rủi ro pháp lý và sai sót thông tin đáng kể."
+  },
+  {
+    "title": "MetaPress có gì đặc biệt?",
+    "subtitle": "Chuỗi quy trình báo chí tự động hóa toàn bộ, mỗi bước đều có AI Agent chuyên trách, đảm bảo quy trình nhanh - chính xác - nhất quán.\nĐịnh hướng giọng điệu, phạm vi chủ đề được thiết lập rõ ràng giúp bảo toàn bản sắc tòa soạn.\nĐáp ứng đa dạng các định dạng nội dung: bài báo, infographic, video, dữ liệu mở rộng."
+  },
+  {
+    "title": "MetaPress được tính phí như thế nào?",
+    "subtitle": "Chi phí triển khai MetaPress thay đổi dựa trên quy mô tòa soạn, số lượng người dùng và các tính năng tùy chọn. Chúng tôi cung cấp các gói dịch vụ linh hoạt kèm tư vấn chi tiết nhằm tối ưu chi phí và hiệu quả vận hành cho từng khách hàng. Liên hệ để nhận báo giá phù hợp nhất với yêu cầu tòa soạn."
+  },
+  {
+    "title": "Tôi cần làm gì để bắt đầu hợp tác với MetaPress?",
+    "subtitle": "Bước đầu tiên là liên hệ với đội ngũ tư vấn của MetaPress để trao đổi về đặc thù và nhu cầu của tòa soạn. Sau đó, chúng tôi cùng phối hợp xây dựng lộ trình tích hợp AI, triển khai thử nghiệm và đào tạo nhân sự. MetaPress sẽ đồng hành hỗ trợ liên tục để đảm bảo hiệu quả sử dụng tối ưu."
+  }
+]
+
+},
+
+  {
+    "section": "unlock",
+    "category": "",
+    "title": "Bắt đầu hành trình đổi mới tòa soạn cùng MetaPress ngay hôm nay",
+    "subtitle": "Ứng dụng AI để tòa soạn vận hành linh hoạt hơn, tiết kiệm hơn và sản xuất nội dung nhanh hơn mỗi ngày.",
+    "button": "Liên hệ ngay"
+  },
+  { "section": "blog", "title": "Blog", "subtitle": "Tri thức MetaPress", "description": "Những bản tin mới nhất về AI, chuyển đổi số và công nghệ trong lĩnh vực báo chí, được MetaPress tự động sản xuất tới quý vị bạn đọc hàng ngày", "button": { "text": "Xem thêm" } },
+
+  {
+    "section": "footer",
+    "subtitle": "Hệ điều hành AI cho tòa soạn tương lai",
+    "links": [
+      { "text": "Solutions" },
+      { "text": "Pricing" },
+      { "text": "Resources" },
+      { "text": "About" },
+      { "text": "Contact" }
+    ],
+    "socials": [
+      { "text": "Instagram" },
+      { "text": "YouTube" },
+      { "text": "Twitter" },
+      { "text": "Linkedln" }
+    ],
+    "contact": {
+      "email": "contact@metapress.ai",
+      "phone": "+91 9876543210"
+    },
+    "bottom": {
+      "company": "©2025 All Rights Reserved by MetaPress",
+      "terms": "Terms of Service",
+      "privacy": "Privacy Policy"
+    }
+  }
+
+
+
+
+
+
+
+  ]
+}
