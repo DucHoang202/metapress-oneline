@@ -77,6 +77,7 @@ const LanguageDropdown: React.FC<LanguageDropdownProps> = ({
     setOpen(false);
     setSearch("");
     window.dispatchEvent(new CustomEvent("languageChange", { detail: langCode }));
+    window.location.reload();
   };
 
   // Lọc ngôn ngữ theo text nhập
