@@ -38,7 +38,10 @@ function Home() {
   }, []);
   return (
     <div className='App'>
- <Header DropdownComponent={LanguageDropdown} />    
+
+ {/* <Header DropdownComponent={LanguageDropdown} />     */}
+ <LanguageDropdown/>
+ <Header/>
       <main>
         {isMobile ? <HeroMobile/> : <Hero/>}   
         <Sponsor/>
